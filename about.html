@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/scss" href="styling/style.css">
+
+  <!--styles the navigation bar at the top and allows it to work-->
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #eb3326;
+      color: white;
+    }
+
+    /* sets up the size of the rows and columns for the grid */
+    #gallery {
+      display: -ms-grid;
+      display: grid;
+
+      width: 100%;
+      height: 100%;
+
+      -ms-grid-row: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+
+      -ms-grid-column: repeat(auto-fit, minmax(150px, 10px));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 10px));
+
+      grid-gap: 10px;
+    }
+
+    #gallery a,
+    #gallery img {
+      width: 100%;
+      height: 100%;
+    }
+
+    p{
+      margin-right:50px;
+      margin-left:100px;
+      padding: 20px;
+    }
+/* -------- */
+
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* gives anything that has the class solid a border */
+p.solid {border-style: solid;}
+</style>
+  
+<!--the names for the bar at the top allowing you to navigate-->
+<body>
+  <div class="topnav">
+    <a href="index.html">Blog</a>
+    <a href="games.html">Games</a>
+    <a class="active" href="about.html">About</a>
+    <img src="images/Team_Cherry_Logo.png" style="width:4%">
+    <a href="merchandise.html">Merchandise</a>
+    
+  </div>
+
+  </head>
+
+  <body>
+    
+    </div>
+    <!--shows an image at the top of the screen and changes its size so it fits better-->
+    <img src="images/team cherry logo.png" alt="team cherry logo" style="width:25%; display: block;
+    margin-left: auto;
+    margin-right: auto;">
+    <!--make all the header text appear with bits of info on the company-->
+    <h1 style="text-align:center; color:#eb3326;">TEAM CHERRY</h1>
+    <h2 style="text-align:center; color:gray;">sweet round games</h2>
+    <p style="text-align:center; color:gray; font-size:large;">team cherry is an indie games developer in adelaide, south australia</p>
+    <p style="text-align:center; color:gray; font-size: large;">our mission is to build crazy, exciting worlds for you to explore and conquer</p>
+
+    <!--shows a selected image and displays it on the website-->
+    <div class="row">
+      <div class="column">
+        <img src="images/hollow knight dev Ari Gibson.png" alt="dev ari gibson" style="width:50%; margin-right: 100px;
+        margin-left: 100px;">
+        <!--makes the text appear for the dev and gives it a border cause it has a class that is connected to a style-->
+        <p class="solid">Ari is a Co-director of Team Cherry. 
+          He previously ran the animation studio Mechanical Apple and
+           has worked on countless projects across film, games and music videos. 
+           Ari's been modding games from before computers were colour and has loved them since
+           his first ever game rental: Faxanadu for NES.</p>
+      </div>
+      <div class="column">
+        <img src="images/hollow knight dev william pellen.png" alt="dev william pellen" style="width:50%; margin-right: 70px;
+        margin-left: 100px;">
+        <p class="solid">William is a Co-director of Team Cherry. 
+          He's been designing and building games for years, 
+          creating crazy worlds for people to poke around in and explore. 
+          He's loved games ever since his Dad found the wing boots for him in Zelda 2,
+          and wants to recreate that experience of adventure and excitement for other people.</p>
+      </div>
+      <div class="column">
+        <img src="images/hollow knight dev jack vine.png" alt="dev jack vine" style="width:50%; margin-right: 50px;
+        margin-left: 100px;">
+        <p class="solid">Jack is Team Cherry’s supremely talented coder. 
+          Jack’s been building out the systems, 
+          tightening and optimising and adding a suite of all new exciting features. 
+          Jack has worked with Team Cherry for some time now, 
+          being instrumental in Hollow Knight’s console releases and the development
+          of its huge final free Content Pack, Godmaster.</p>
+      </div>
+    </div>
+    
+  </body>
+
+</html>

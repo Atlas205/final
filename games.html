@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/scss" href="styling/style.css">
+  <title>video games</title>
+
+  <style>
+    /* makes a grid so the images show up neatly */
+    #gallery {
+      display: -ms-grid;
+      display: grid;
+
+      width: 100%;
+      height: 100%;
+
+      -ms-grid-row: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+
+      -ms-grid-column: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+      grid-gap: 10px;
+
+    }
+
+    #gallery a,
+    #gallery img {
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: slategray;
+    }
+
+    .topnav a.active {
+      background-color: #eb3326;
+      color: white;
+    } 
+
+
+
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+
+    #grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, gray);
+}
+
+  </style>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Blog</a>
+    <a class="active" href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <a href="merchandise.html">Merchandise</a>
+    <img src="images/Team_Cherry_Logo.png" style="width:4%">
+  </div>
+
+  </head>
+
+  <body>
+
+
+      <!--makes an image show and turns it into a link to a corrasponding website-->
+      <img src="images/hollow knight title.png"style="margin-bottom:20px;" width="300px" class="center" >
+      <div id="gallery">
+        <a href="https://www.youtube.com/watch?v=UAO2urG23S4">
+          <img src="images/hollow knight trailer img.png" style="width:90%; height:85%; margin-bottom:35px;"/>
+        </a>
+        
+        <p style="margin-bottom:35px">hollow knight is the first game created, with vast areas and plenty to explore, yet you wont ever get lost
+          in all the areas you can explore and map, theres a variety of enemies to face from the infected bugs in the
+          forgotten crossroads
+          to the jellyfish like creatures in the fog canyon, each area look and feel completly different but they all
+          connect easily
+          and each area has countless challenges like the unique bosses that are challenging yet fun especially since you
+          always get rewarded from winning
+          from geo (the in-game currency) to charms or even pale ore to upgrade your weapon, and with the god home
+          update theres a new challenge to take on which can be found in the laberynth that is the royal waterways
+          the godseeker can be found and let you make your way to godhome where you can find the pantheons and the hall of gods
+          the pantheons are boss rushes and the hall of gods lets you challenge all the bosses youve fought before on three
+          difficultys which are attuned, ascended, and radiant. attuned is just there base forms so how you would fight them normally
+          ascended there slightly faster and do double damage and radiant there about the same speed as ascended but if they hit you its
+          a one shot.
+        </p>
+      </div>
+  
+      <div id="grad1" class="gallery">
+        <img src="images/hollow knight silksong title.png" style="margin-top:50px; width:50%;" class="center" id="grad1">
+        <div id="gallery">
+          <a href="">
+            <img src="images/hollow knight silksong trailer image.png" style="margin-top:50px; width:75%; height:85%;">
+          </a>
+    
+          <p>
+            Discover a vast, haunted kingdom in Hollow Knight: Silksong! 
+            The sequel to the award winning action-adventure. 
+            Explore, fight and survive as you ascend to the peak of a land ruled by silk and song.
+          </p>
+        </div> 
+      </div>
+     
+  </body>
+
+</html>
