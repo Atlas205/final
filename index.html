@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" type="text/scss" href="styling/style.css">
+<link rel="stylesheet" type="text/css" href="styling/style.css">
 
 <head>
   <style>
@@ -59,76 +59,30 @@
       opacity: 0.5;
     }
 
-
-
-
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .topnav a.active {
-      background-color: #eb3326;
-      color: white;
-    }
     /* colors all text in h1 tags */
     h1 {
       color: #d4251c;
     }
-   
-    .first {
+
+    .blog-post {
       display: block;
-      margin-left: 600px;
+      width: 46%;
+      margin-left: 52%;
       margin-right: auto;
-      width: 50%;
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px;
+      margin-bottom: 20px;
     }
 
-    .second {
-      display: block;
+    .blog-post:nth-of-type(2n){
       margin-left: auto;
-      margin-right: 700px;
-      width: 50%;
-    }
-
-    .third {
-      display: block;
-      margin-left: 600px;
-      margin-right: auto;
-      width: 50%;
-    }
-
-    .fourth {
-      display: block;
-      margin-left: auto;
-      margin-right: 700px;
-      width: 50%;
-    }
-
-    .fifth {
-      display: block;
-      margin-left: 600px;
-      margin-right: auto;
-      width: 50%;
+      margin-right: 52%;
     }
 
 
 
 
-/*     
+    /*     
 Video {
   object-fit: cover;
   width: 100vw;
@@ -138,69 +92,64 @@ Video {
   left: 0;
 } */
 
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
 
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
 
+    #content {
+      position: fixed;
+      bottom: 0;
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
 
-    
-* {
-  box-sizing: border-box;
-}
+    #myBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;*
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
   </style>
 
-<body >
-     <video autoplay muted loop id="myVideo">
-      <source src="yt1s.com - Hollow Knight Ambience  City of Tears with rain_v720P.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    
-    <div class="content">
-      <h1></h1>
-      <p></p>
-      <button id="myBtn" onclick="myFunction()">Pause</button>
-    </div>
-    
-    <script>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="yt1s.com - Hollow Knight Ambience  City of Tears with rain_v720P.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div id="content">
+    <h1></h1>
+    <p></p>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+
+  <script>
     var video = document.getElementById("myVideo");
     var btn = document.getElementById("myBtn");
-    
+
     function myFunction() {
       if (video.paused) {
         video.play();
@@ -217,53 +166,53 @@ body {
     <a href="games.html">Games</a>
     <a href="about.html">About</a>
     <a href="merchandise.html">Merchandise</a>
-    <img src="images/Team_Cherry_Logo.png" style="width:4%">
+    <img src="images/Team_Cherry_Logo.png">
   </div>
 
 
-  <div class="first">
+  <div class="blog-post">
     <h1>TEAM CHERRY HOLIDAY SIGN OFF</h1>
     <p>Happy Holidays Gang!</p>
     <p>With Christmas close and Team Cherry about to take a few days off
-      after an intensive year’s development, 
+      after an intensive year’s development,
       we’re gonna try and keep this update as snap-sharp as we can.</p>
-      <p>12/13/19</p>
+    <p>12/13/19</p>
 
-      
-      
+
+
   </div>
   <!-- <img src="images/hollow knight dev holiday sign off.png" style="display: block; margin-left:10px; margin-right: 100px; width: 25%"> -->
 
-  <div class="second">
+  <div class="blog-post">
     <h1>POST E3 WRAP!</h1>
-    <p>Team Cherry checking in for a long-past due Silksong development update. 
+    <p>Team Cherry checking in for a long-past due Silksong development update.
       Let’s get into it for our post-E3 wrap edition!</p>
-      <p>6/25/19</p>
+    <p>6/25/19</p>
   </div>
 
 
-  <div class="third">
+  <div class="blog-post">
     <h1>LATE ANNIVERSARY CELEBRATION</h1>
-    <p>Gang! We’re jumping in for a quick round-up update. 
-      Lots going on in the world of Hollow Knight, 
-      so we’re gonna start running down the list. 
-      This’ll be a speedy one, so we can dive straight back into Silksong development. 
+    <p>Gang! We’re jumping in for a quick round-up update.
+      Lots going on in the world of Hollow Knight,
+      so we’re gonna start running down the list.
+      This’ll be a speedy one, so we can dive straight back into Silksong development.
       Hold onto your horns!
     </p>
     <p>3/19/19</p>
   </div>
 
 
-  <div class="fourth">
+  <div class="blog-post">
     <h1>HOLLOW KNIGHT: SILKSONG REVEALED!</h1>
-    <p>No time for fluff today gang. 
-      Let’s leap straight in for the big reveal, 
+    <p>No time for fluff today gang.
+      Let’s leap straight in for the big reveal,
       in trailer form!</p>
     <p>2/14/19</p>
   </div>
 
 
-  <div class="fifth">
+  <div class="blog-post">
     <h1>READY YOUR NEEDLE!</h1>
     <p>2/11/19</p>
   </div>
