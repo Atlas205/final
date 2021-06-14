@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*styles the body of all websites*/
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +12,7 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #333;
-    margin:0px;
+    margin: 0px;
     margin-bottom: 20px;
 
     a {
