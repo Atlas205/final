@@ -7,21 +7,6 @@
 
 <head>
   <style>
-    /* <div class="section">
-
-<h1>Welcome To Paradise</h1>
-
-<div class="video-container">
-    <div class="color-overlay"></div>
-    <video autoplay loop muted>
-        <source src="video.mp4" type="video/mp4">
-    </video>
-</div>
-
-</div>
-<div style="height:400px;width:100%">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod soluta natus. Magni tempora animi illo ea accusamus ex deserunt odio facere deleniti molestiae qui eaque in illum praesentium sunt iste accusantium nobis repellat aspernatur alias, architecto consectetur voluptate dolore! Saepe, enim rem nam dolorem tempore blanditiis perspiciatis repellat architecto.</p>
-</div> */
 
     .section {
       position: relative;
@@ -43,6 +28,7 @@
       opacity: 0.7;
     }
 
+    /* lets the video actually show up */
     .video-container {
       position: absolute;
       top: 0;
@@ -65,6 +51,7 @@
       color: #d4251c;
     }
 
+    /* makes the text have a transparent background so its easie to read */
     .blog-post {
       display: block;
       width: 46%;
@@ -80,25 +67,14 @@
       margin-right: 52%;
     }
 
-
-
-
-    /*     
-Video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-} */
-
+    /* styles the body */
     body {
       margin: 0;
       font-family: Arial;
       font-size: 17px;
     }
 
+    /* moves the video behind everything else */
     #myVideo {
       position: fixed;
       right: 0;
@@ -107,6 +83,7 @@ Video {
       min-height: 100%;
       z-index: -1;
     }
+
 
     #content {
       position: fixed;
@@ -136,14 +113,14 @@ Video {
   </style>
 
 <body>
+  <!--the video for the background-->
   <video autoplay muted loop id="myVideo">
     <source src="yt1s.com - Hollow Knight Ambience  City of Tears with rain_v720P.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
   <div id="content">
-    <h1></h1>
-    <p></p>
+    <!--the pause button for the video so if the user doesnt like it they can stop the video-->
     <button id="myBtn" onclick="myFunction()">Pause</button>
   </div>
 
@@ -182,8 +159,7 @@ Video {
 
 
   </div>
-  <!-- <img src="images/hollow knight dev holiday sign off.png" style="display: block; margin-left:10px; margin-right: 100px; width: 25%"> -->
-
+  
   <div class="blog-post">
     <h1>POST E3 WRAP!</h1>
     <p>Team Cherry checking in for a long-past due Silksong development update.
@@ -219,51 +195,6 @@ Video {
   </div>
 
   <img href="images/hollow knigh.jpg">
-
-
-  <!-- ----------------------------------- -->
-  <!-- <div style="text-align:center">
-    <button onclick="playPause()">Play/Pause</button>
-
-    <br><br>
-    <video id="video1" width="fill">
-      <source src="yt1s.com - Hollow Knight Ambience  City of Tears with rain_v720P.mp4" type="video/mp4">
-      <source src="yt1s.com - Hollow Knight Ambience  City of Tears with rain_v720P.mp4" type="video/ogg">
-      Your browser does not support HTML video.
-    </video>
-  </div>
-
-  <script>
-    var myVideo = document.getElementById("video1");
-
-    function playPause() {
-      if (myVideo.paused)
-        myVideo.play();
-      else
-        myVideo.pause();
-    }
-
-    function makeBig() {
-      myVideo.width = 560;
-    }
-
-    function makeSmall() {
-      myVideo.width = 320;
-    }
-
-    function makeNormal() {
-      myVideo.width = 420;
-    }
-
-
-
-
-
-   
-  </script> -->
-
-  <!-- <p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p> -->
-
 </body>
 
 </html>

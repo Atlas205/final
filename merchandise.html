@@ -8,6 +8,7 @@
   <title>Merchandise</title>
 
   <style>
+    /* puts in a grid and the sizes of the rows and columns change based on the size of the window */
     #gallery {
       display: -ms-grid;
       display: grid;
@@ -23,14 +24,14 @@
 
       grid-gap: 10px;
     }
-
+    /* styles the grids width and height */
     #gallery a,
     #gallery img {
       width: 100%;
       height: 100%;
     }
 
-
+    /* creates the navigation bar at the top of the screen and makes it actually work */
     .topnav {
       overflow: hidden;
       background-color: #333;
@@ -55,6 +56,7 @@
       color: white;
     }
 
+    /* same as up above but different label so it can be used seperetly */
     #shop {
       display: -ms-grid;
       display: grid;
@@ -78,35 +80,7 @@
     }
 
 
-
-    /* .tooltip {
-  position: relative;
-  display: inline-block;
- 
-}
-
- Tooltip text
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-   Position the tooltip text
-   position: absolute;
-  z-index: 1;
-}
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}  */
-
-    a:hover {}
-
+    /* makes the items with the tag flip over when you hover over them so information can be displayed */
     .flip-card {
       background-color: transparent;
       width: 300px;
@@ -149,6 +123,7 @@
     }
   </style>
 
+<!--the navigation bar at the top and the names of whats in the boxes so you know where it leads-->
   <div class="topnav">
     <a href="index.html">Blog</a>
     <a href="games.html">Games</a>
@@ -159,6 +134,7 @@
 </head>
 
 <body>
+  <!--shows the image and makes it so it leads to another site-->
   <div id="gallery">
     <a href="https://www.fangamer.com/collections/hollow-knight">
       <img src="images/merchandise hollow knight.png" />
@@ -167,6 +143,7 @@
 
   <div id="shop">
 
+    <!--makes use of the flip card and does the same thing as the one right above it-->
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -176,13 +153,15 @@
           </a>
 
         </div>
-        <div class="flip-card-back">
-          <h1>wanderers journal</h1>
-          <p>the wanderers journal is an item that can be found around the kingdom of hallownest
-            on the dead bodies of adventurers and can be sold to a shop keeper in the city of tears
-            for 200 geo which is the in-game currency
-          </p>
-        </div>
+        <a href="https://www.fangamer.com/collections/hollow-knight/products/hollow-knight-wanderers-journal-book">
+          <div class="flip-card-back">
+            <h1>wanderers journal</h1>
+            <p>the wanderers journal is an item that can be found around the kingdom of hallownest
+              on the dead bodies of adventurers and can be sold to a shop keeper in the city of tears
+              for 200 geo which is the in-game currency
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -195,13 +174,15 @@
               style="width:300px;height:300px;">
           </a>
         </div>
-        <div class="flip-card-back">
-          <h1>the last stag</h1>
-          <p>the stagways were made by the pale king to assist bugs in getting around the
-            vast kingdom of hallownest with the stags acting like what buses are to us, in the
-            game stagways can be found all around the kingdom normally theres one per area
-          </p>
-        </div>
+        <a href="https://www.fangamer.com/collections/hollow-knight/products/hollow-knight-stag-pin">
+          <div class="flip-card-back">
+            <h1>the last stag</h1>
+            <p>the stagways were made by the pale king to assist bugs in getting around the
+              vast kingdom of hallownest with the stags acting like what buses are to us, in the
+              game stagways can be found all around the kingdom normally theres one per area
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -213,15 +194,17 @@
             style="width:300px;height:300px;">
           </a>
         </div>
-        <div class="flip-card-back">
-          <h1>the grimm toupe</h1>
-          <p>the grimm troupe is a group of mask wearers who can be summoned by lighting the lantern,
-            once thats done the gimm troupe tent will appear in dirtmouth which then if the knight goes
-            into the tent they can get the grimm child charm which makes flames appearr on the map,
-            if the player gathers three flames and takes the grimm child back to grimm he will take the grimm child
-            into his cloak and a fight will start or as grimm refers to it a "dance"
-          </p>
-        </div>
+        <a href="https://www.fangamer.com/collections/hollow-knight/products/grimm-hollow-knight-shirt">
+          <div class="flip-card-back">
+            <h1>the grimm toupe</h1>
+            <p>the grimm troupe is a group of mask wearers who can be summoned by lighting the lantern,
+              once thats done the gimm troupe tent will appear in dirtmouth which then if the knight goes
+              into the tent they can get the grimm child charm which makes flames appearr on the map,
+              if the player gathers three flames and takes the grimm child back to grimm he will take the grimm child
+              into his cloak and a fight will start or as grimm refers to it a "dance"
+            </p>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -233,13 +216,15 @@
               style="width:300px;height:300px;">
           </a>
         </div>
-        <div class="flip-card-back">
-          <h1>the music of hallownest</h1>
-          <p>the music in the game can very easily tell the player whats happening with each of the
-            around 50 bosses having seperate music from each other and from the areas they reside in
-            with each area having background ambiance
-          </p>
-        </div>
+        <a href="https://www.fangamer.com/products/hollow-knight-vinyl-soundtrack">
+          <div class="flip-card-back">
+            <h1>the music of hallownest</h1>
+            <p>the music in the game can very easily tell the player whats happening with each of the
+              around 50 bosses having seperate music from each other and from the areas they reside in
+              with each area having background ambiance
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
